@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<meta charset="UTF-8">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<title>Gas Station</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="/js/app.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a  href="/index.html" class="logo">Station</a>
+
+            <nav class="navigation">
+                <a href="/html/news.html" style="--i:1;"><b>News</b></a>
+                <a href="/html/about.html"style="--i:2;"><b>About</b></a>
+                <a href="/html/career.html"style="--i:3;"><b>Career</b></a>
+                <a href="/html/contact.html"style="--i:4;"><b>Contact</b></a> 
+            </nav>
+
+                <button class = "btnLogin-popup"><b>Login</b></button>
+
+                <div class="toggle_btn"><ion-icon name="reorder-three-outline"></ion-icon></div>
+
+                   <div class="dropdown_menu">
+                    <nav class="navigation">
+                        <a href="/html/news.html" style="--i:1;"><b>News</b></a>
+                        <a href="/html/about.html"style="--i:2;"><b>About</b></a>
+                        <a href="/html/career.html"style="--i:3;"><b>Career</b></a>
+                        <a href="/html/contact.html"style="--i:4;"><b>Contact</b></a> 
+                    </nav>
+                    <button class = "btnLogin-popup"><b>Login</b></button> 
+                   </div>
+
+            </header>
+
+        <section class="home">
+            <div class="home-content">
+                <div class="typewriter">
+                <h1>Our fuel for your safety!</h1>
+                </div>
+                <p>You can find everything you want at our stations!
+                    Go find some more information about below
+                </p>
+                <a href="/html/about.html" class="btn">Info</a>
+            </div>
+        </section>
+
+        <div class="wrapper">
+            <div class="form-box login"><h2>Login</h2>
+                <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-open-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-open-outline"></ion-icon></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btnLogin">Login</button>
+            <div class="login-register">
+                <p>
+                    Don't have an account? <a href="#" class="register-link">Register</a>
+                </p>
+            </div>
+            </form>
+        </div>
+        <div class="form-box register"><h2>Registration</h2>
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></ion-icon></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-open-outline"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-open-outline"></ion-icon></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+            <label><input type="checkbox">I agree to terms & conditions</label>
+        </div>
+        <button type="submit" class="btnLogin">Register</button>
+        <div class="login-register">
+            <p>
+                Already have an account? <a href="#" class="login-link">Login</a>
+            </p>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div class="overlay"></div>
+    </body>
+</html>
