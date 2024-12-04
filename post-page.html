@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Station</title>
+    <link rel="stylesheet" type="text/css" href="styleNews.css">
+<script src="app.js" defer></script> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+ <header class="header">
+    <a href="index.html" class="logo">Station</a>
+    <nav class="navbar">
+        <a href="#About"style="--i:1;"><b>News</b></a>
+                <a href="#about"style="--i:2;"><b>Products</b></a>
+                <a href="#products"style="--i:3;"><b>Services</b></a>
+                <a href="#"style="--i:4;"><b>About</b></a>
+                <a href="Contact.html"style="--i:5;"><b>Contact</b></a> 
+    </nav>
+    <div class="icons">
+        <a href="Login.html"><button class = "btnLogin-popup"><b>Login</b></button> </a>
+       <div class="fas fa-palette" id="theme-btn" style="  opacity: 0;
+       animation: zoomIn 1s ease forwards;
+       animation-delay: 3.5s; transition: .5s;"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div> 
+ </header>
+<body>
+ <div class="post-header">
+    <div class="header-content post-container">
+        <a href="News.html" class="back-home">Go Back</a>
+    <h1 class="header-title">How To Create lalala</h1>
+<img src="pexels-diva-29523834.jpg" alt="" class="header-img">    
+</div>
+ </div>
+    <section class="post-content post container">
+      <h2 class="sub-heading">Create lalala</h2>
+    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore, laboriosam nobis illo, magni fugiat in optio explicabo obcaecati laudantium voluptatibus culpa consequuntur nesciunt commodi aperiam quibusdam dolorem eligendi assumenda.</p>
+    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore, laboriosam nobis illo, magni fugiat in optio explicabo obcaecati laudantium voluptatibus culpa consequuntur nesciunt commodi aperiam quibusdam dolorem eligendi assumenda.</p>   
+    <h2 class="sub-heading">Create lalala</h2>
+    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore, laboriosam nobis illo, magni fugiat in optio explicabo obcaecati laudantium voluptatibus culpa consequuntur nesciunt commodi aperiam quibusdam dolorem eligendi assumenda.</p>
+    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore, laboriosam nobis illo, magni fugiat in optio explicabo obcaecati laudantium voluptatibus culpa consequuntur nesciunt commodi aperiam quibusdam dolorem eligendi assumenda.</p> 
+    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore, laboriosam nobis illo, magni fugiat in optio explicabo obcaecati laudantium voluptatibus culpa consequuntur nesciunt commodi aperiam quibusdam dolorem eligendi assumenda.</p>    
+</section>
+<section class="footer">
+    <div class="container">
+    
+      <div class="col" id="company">
+            <h3>About us</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta eaque accusantium error recusandae facilis eveniet iste ratione architecto. Eligendi sequi minus aut similique, iste nihil fugit nesciunt magnam natus?
+            </p>
+         <div class="social">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+         </div>
+        </div>
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <div class="links">
+                <a href="#">Illustration</a>
+                <a href="#">Creatives</a>
+                <a href="#">Poster Design</a>
+                <a href="#">Card Design</a>
+            </div>
+        </div>
+        <div class="col" id="useful-links">
+    <h3>Links</h3>
+    <div class="links">
+        <a href="#">About</a>
+        <a href="#">Our Policy</a>
+        <a href="#">Services</a>
+        <a href="#">Help</a>
+    </div>
+        </div>
+        <div class="col" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-details">
+        <i class="fa fa-envelope"></i>
+        <p>station@gmail.com</p>
+    </div>
+    <div class="contact-details">
+        <i class="fa fa-phone"></i>
+        <p>+48517239381</p>
+    </div>
+    <div class="contact-details">
+        <i class="fa fa-location"></i>
+        <p>45-271, Opole</p>
+        </div>
+    
+    
+    </section>
+<div class="copyrightText">
+    <p>Copyright © 2024. All Rights Reserved.</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function () {
+  $(".filter-item").click(function () {
+    const value = $(this).attr("data-filter");
+    if(value == "all") {
+      $(".post-box").show("1000");
+    } else{
+      $(".post-box").not("." + value).hide("1000");
+      $(".post-box").filter('.'+value).show("1000");
+    }
+  });
+  $(".filter-item").click(function () {
+    $(this).addClass("active-filter").siblings().removeClass("active-filter");
+  });
+});
+</script>
+</body>
+</html>

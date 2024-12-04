@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Station</title>
+    <link rel="stylesheet" type="text/css" href="styleProducts.css">
+<script src="app.js" defer></script> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+ <header class="header">
+    <a href="index.html" class="logo">Station</a>
+    <nav class="navbar">
+        <a href="News.html"style="--i:1;"><b>News</b></a>
+                <a href="#about"style="--i:2;"><b>Products</b></a>
+                <a href="#products"style="--i:3;"><b>Services</b></a>
+                <a href="#"style="--i:4;"><b>About</b></a>
+                <a href="Contact.html"style="--i:5;"><b>Contact</b></a> 
+    </nav>
+    <div class="icons">
+        <a href="Login.html"><button class = "btnLogin-popup"><b>Login</b></button> </a>
+        <div class="fas fa-search" id="search-btn" style="  opacity: 0;
+        animation: zoomIn 1s ease forwards;
+        animation-delay: 3.2s; transition: .5s;"></div>
+       <div class="fas fa-palette" id="theme-btn" style="  opacity: 0;
+       animation: zoomIn 1s ease forwards;
+       animation-delay: 3.5s; transition: .5s;"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div> 
+    
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+ </header>
+ <section class="home" id="home">
+  <div class="left">
+<img src="TEST4.png" alt="">
+<div class="text">Fuel</div>
+  </div>
+  <div class="right">
+    <div class="text">Fuel</div>
+    <img src="test3.png" alt="">
+  </div>
+</section>
+
+
+<section class="footer">
+    <div class="container">
+    
+      <div class="col" id="company">
+            <h3>About us</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta eaque accusantium error recusandae facilis eveniet iste ratione architecto. Eligendi sequi minus aut similique, iste nihil fugit nesciunt magnam natus?
+            </p>
+         <div class="social">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+         </div>
+        </div>
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <div class="links">
+                <a href="#">Illustration</a>
+                <a href="#">Creatives</a>
+                <a href="#">Poster Design</a>
+                <a href="#">Card Design</a>
+            </div>
+        </div>
+        <div class="col" id="useful-links">
+    <h3>Links</h3>
+    <div class="links">
+        <a href="#">About</a>
+        <a href="#">Our Policy</a>
+        <a href="#">Services</a>
+        <a href="#">Help</a>
+    </div>
+        </div>
+        <div class="col" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-details">
+        <i class="fa fa-envelope"></i>
+        <p>station@gmail.com</p>
+    </div>
+    <div class="contact-details">
+        <i class="fa fa-phone"></i>
+        <p>+48517239381</p>
+    </div>
+    <div class="contact-details">
+        <i class="fa fa-location"></i>
+        <p>45-271, Opole</p>
+        </div>
+    
+    
+    </section>
+<div class="copyrightText">
+    <p>Copyright © 2024. All Rights Reserved.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+     var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 100,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+      }, parallax: true,
+      speed: 1000,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }, autoplay: {
+        delay: (3000)
+      },
+        loop: true,
+    });
+  </script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".tilt"), {
+        startX: 15,
+        startY: 15,
+		max: 25,
+		speed: 400,
+        glare:                  true,  
+        "max-glare":            0.1, 
+        reset:                  true,
+        scale:                  1.1, 
+	});
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('a[href^="#"]').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+  });
+</script>
+</body>
+</html>
