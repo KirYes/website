@@ -578,6 +578,16 @@ transition: all 0.5s ease;
 .show{
   filter:blur(0);
 }
+
+.heading, .box, .text-box, .row{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 @media screen and (max-width: 1150px){
   .timeline{
     width: 80vw;

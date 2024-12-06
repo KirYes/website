@@ -16,11 +16,11 @@
  <header class="header">
     <a href="index.html" class="logo">Station</a>
     <nav class="navbar">
-        <a href="News.html"style="--i:1;"><b>News</b></a>
-                <a href="Products.html"style="--i:2;"><b>Products</b></a>
-                <a href="Services.html"style="--i:3;"><b>Services</b></a>
-                <a href="About.html"style="--i:4;"><b>About</b></a>
-                <a href="Contact.html"style="--i:5;"><b>Contact</b></a> 
+        <a href="News.html" style="--i:1;"><b>News</b></a>
+                <a href="Products.html" style="--i:2;"><b>Products</b></a>
+                <a href="Services.html" style="--i:3;"><b>Services</b></a>
+                <a href="About.html" style="--i:4;"><b>About</b></a>
+                <a href="Contact.html" style="--i:5;"><b>Contact</b></a> 
     </nav>
     <div class="icons">
         <a href="Login.html"><button class = "btnLogin-popup"><b>Login</b></button> </a>
@@ -56,7 +56,7 @@
       <div class="image-hot-dog">
           <img src="hot-dog.png" alt="hot-dog">
         </div>
-    <div class="text-box"style="text-align: left;">
+    <div class="text-box" style="text-align: left;">
       <h1>Delicious hot-dogs!</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem nam, laudantium error minima quisquam ipsa, doloremque ad, fuga expedita sunt ea nihil unde! Dolorem deleniti officiis quia sint ipsum!</p>
     </div>
@@ -105,7 +105,7 @@
 </div>
 </section>
 
-<section class="services" id="services">
+<section class="services" id="servic">
     <h1 class="heading">our <span>services</span></h1>
     <div>
         <ul>
@@ -137,6 +137,7 @@
     </p>
             </div>
           </li>
+        </ul>
       </div>
     </section>
 
@@ -287,6 +288,8 @@
         <i class="fa fa-location"></i>
         <p>45-271, Opole</p>
         </div>
+        </div>
+    </div>
     </section>
 <div class="copyrightText">
     <p>Copyright © 2024. All Rights Reserved.</p>
@@ -340,6 +343,19 @@
               scrollTop: $($.attr(this, 'href')).offset().top
           }, 1000);
       });
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $(window).on('scroll', function () {
+      $('.heading, .box, .text-box, .row').each(function () {
+        const topOfElement = $(this).offset().top;
+        const bottomOfWindow = $(window).scrollTop() + $(window).height();
+        if (bottomOfWindow > topOfElement + 50) {
+          $(this).addClass('visible');
+        }
+      });
+    });
   });
 </script>
 </body>
