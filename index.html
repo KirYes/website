@@ -16,7 +16,7 @@
  <header class="header">
     <a href="index.html" class="logo">Station</a>
     <nav class="navbar">
-        <a href="News.html" style="--i:1;"><b>News</b></a>
+                <a href="News.html" style="--i:1;"><b>News</b></a>
                 <a href="Products.html" style="--i:2;"><b>Products</b></a>
                 <a href="Services.html" style="--i:3;"><b>Services</b></a>
                 <a href="About.html" style="--i:4;"><b>About</b></a>
@@ -26,14 +26,12 @@
       <a href="Login.html" class="btnLogin-popup"><b>Login</b></a>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div> 
-    
-  
  </header>
+ 
  <section class="home" id="home">
 <div class="content">
     <h3>Our fuel</h3>
     <h3>for your safety!</h3>
-
     <p>
         You can find everything you want at our stations!
         Go find some more information about below</p>
@@ -144,9 +142,9 @@
 <div class="row"><div class="image"><img src="about.jpg" alt=""></div>
 <div class="content">
     <h3>Who are we?</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam doloremque provident laborum aut ullam iusto repellat asperiores. Nisi sunt repellendus voluptas ab, cumque veritatis quibusdam! Quae assumenda nostrum reprehenderit!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus corrupti ab quos illum vitae aperiam debitis, totam amet laboriosam repellendus. Ipsam debitis id eius, sequi illo laudantium at pariatur!</p>
-    <a href="About.html" class="btn">Learn more</a>
+    <p class="sonic">At our Station, we pride ourselves on being the beating heart of Opole. Whether you're embarking on an adventure, returning home, or simply stopping by, our mission is to make every moment here memorable.</p>
+    <p class="sanic">Our station is a blend of history, modernity, and community, designed to provide a seamless and welcoming experience for travelers, visitors, and locals alike.</p>
+    <button class="push">Learn more</button>
  </div>
 </div>
  </div>
@@ -355,5 +353,14 @@
     });
   });
 </script>
+<script>
+  $(document).ready(function(){
+    $(".push").click(function(){
+      $(".sonic").load("test.txt");
+      $(".sanic").load("test2.txt");
+      $(".image img").attr("src", "main.jpg");
+    });
+  });
+  </script>
 </body>
 </html>
