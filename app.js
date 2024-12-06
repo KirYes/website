@@ -1,3 +1,4 @@
+/*hide navbar when scroll down*/
 let lastScrollTop = 0;
 const header = document.querySelector('.header')
 window.addEventListener("scroll", function(){
@@ -9,7 +10,7 @@ window.addEventListener("scroll", function(){
     }
     lastScrollTop = scrollTop;
 });
-
+/*bg navbar when scroll*/
 document.addEventListener('scroll', () => {
     if(window.scrollY > 150) {
         header.style.background="#100f0f";
@@ -18,11 +19,10 @@ document.addEventListener('scroll', () => {
             header.style.background="none";
         }
 });
-let navbar = document.querySelector('.navbar');
 
+let navbar = document.querySelector('.navbar');
 document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
     if (navbar.classList.contains('active')) {
         header.style.background = "#100f0f"; 
     }else{
@@ -30,16 +30,8 @@ document.querySelector('#menu-btn').onclick = () =>{
     }
 }
 
-let searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active')
-}
-
 window.onscroll= () =>{
     navbar.classList.remove('active')
-    searchForm.classList.remove('active');
 }
 var items = document.querySelectorAll("li");
 
@@ -65,16 +57,7 @@ function callbackFunc() {
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 
-  document.querySelectorAll('.imgBx').forEach(icon => {
-    icon.addEventListener('mouseover', function() {
-        document.querySelector('.imgBx.active').classList.remove('active');
-        document.querySelector('.box-container.active').classList.remove('active');
-        
-        this.classList.add('active');
-        const contentId = this.getAttribute('data-id');
-        document.getElementById(contentId).classList.add('active');
-    });
-});
+
 
 const observer = new IntersectionObserver((entries) => {
 entries.forEach((entry) =>{
@@ -86,7 +69,3 @@ entries.forEach((entry) =>{
     }
 });
 });
-
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
-   

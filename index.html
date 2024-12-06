@@ -1,39 +1,33 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gas Station</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-<script src="app.js" defer></script> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="app.js" defer></script> 
 </head>
+
 <body>
  <header class="header">
     <a href="index.html" class="logo">Station</a>
     <nav class="navbar">
         <a href="News.html"style="--i:1;"><b>News</b></a>
                 <a href="Products.html"style="--i:2;"><b>Products</b></a>
-                <a href="Products.html"style="--i:3;"><b>Services</b></a>
-                <a href="#"style="--i:4;"><b>About</b></a>
+                <a href="Services.html"style="--i:3;"><b>Services</b></a>
+                <a href="About.html"style="--i:4;"><b>About</b></a>
                 <a href="Contact.html"style="--i:5;"><b>Contact</b></a> 
     </nav>
     <div class="icons">
         <a href="Login.html"><button class = "btnLogin-popup"><b>Login</b></button> </a>
-        <div class="fas fa-search" id="search-btn" style="  opacity: 0;
-        animation: zoomIn 1s ease forwards;
-        animation-delay: 3.2s; transition: .5s;"></div>
-       <div class="fas fa-palette" id="theme-btn" style="  opacity: 0;
-       animation: zoomIn 1s ease forwards;
-       animation-delay: 3.5s; transition: .5s;"></div>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div> 
     
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
+  
  </header>
  <section class="home" id="home">
 <div class="content">
@@ -43,144 +37,36 @@
     <p>
         You can find everything you want at our stations!
         Go find some more information about below</p>
-    <a href="#" class="btn">Info</a>
+    <a href="#menu" class="btn" id="btn">Info</a>
 </div>
-
  </section>
 
- <section class="wheel" id="section1">
-    
-    <div class="container">
-        <div class="icon">
-            <div class="imgBx" style="--i:1;" data-id="content1">
-                <img src="elon.jpg" alt="">
-            </div>
-            <div class="imgBx" style="--i:2;"data-id="content2">
-                <img src="elon.jpg" alt="">
-            </div>
-            <div class="imgBx" style="--i:3;"data-id="content3">
-                <img src="elon.jpg" alt="">
-            </div>
-            <div class="imgBx" style="--i:4;"data-id="content4">
-                <img src="elon.jpg" alt="">
-            </div>
-        </div>
-        <div class="content">
-            <div class="box-container"id="content1">
-            <div class="box">
-                <div class="image">
-                    <img src="pexels-kaci-caleb-1424981.jpg" alt="Tasty Coffee">
-                </div>
-                <div class="info">
-                    <a href="#" class="title">Tasty and Refreshing Coffee</a>
-                    <span>by admin / 21st, May 2021</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error perferendis consequuntur quis distinctio culpa soluta voluptatibus corrupti a earum cumque optio quo, provident dolore.</p>
-                    <a href="#" class="btn">Read More</a> 
-                </div>
-            </div>
-            </div>
-            <div class="box-container" id="content2">
-                <div class="box">
-                    <div class="image">
-                        <img src="pexels-kaci-caleb-1424981.jpg" alt="Tasty Coffee">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="title">Tasty and Refreshing Coffee</a>
-                        <span>by admin / 21st, May 2021</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error perferendis consequuntur quis distinctio culpa soluta voluptatibus corrupti a earum cumque optio quo, provident dolore.</p>
-                        <a href="#" class="btn">Read More</a> 
-                    </div>
-                </div>
-                </div>
-                <div class="box-container" id="content3">
-                    <div class="box">
-                        <div class="image">
-                            <img src="pexels-kaci-caleb-1424981.jpg" alt="Tasty Coffee">
-                        </div>
-                        <div class="content">
-                            <a href="#" class="title">Tasty and Refreshing Coffee</a>
-                            <span>by admin / 21st, May 2021</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error perferendis consequuntur quis distinctio culpa soluta voluptatibus corrupti a earum cumque optio quo, provident dolore.</p>
-                            <a href="#" class="btn">Read More</a> 
-                        </div>
-                    </div>
-                    </div>
-                    <div class="box-container" id="content4">
-                        <div class="box">
-                            <div class="image">
-                                <img src="pexels-kaci-caleb-1424981.jpg" alt="Tasty Coffee">
-                            </div>
-                            <div class="content">
-                                <a href="#" class="title">Tasty and Refreshing Coffee</a>
-                                <span>by admin / 21st, May 2021</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error perferendis consequuntur quis distinctio culpa soluta voluptatibus corrupti a earum cumque optio quo, provident dolore.</p>
-                                <a href="#" class="btn">Read More</a> 
-                            </div>
-                        </div>
-                        </div>
-        </div>
+ <section class="menu" id="menu">
+  <h1 class="heading"><span>Tasty</span> food</h1>
+  <div class="container-coffee">
+    <div class="image-coffee">
+      <img src="coffee.png" alt="coffee">
     </div>
- </section>
-<section class="slideshow">
-  <div class="carousel">
-    <div class="slide">
-      <img src="elon.jpg" alt="">
-    </div>
-    <div class="slide">
-      <img src="elon.jpg" alt="">
-    </div>
-    <div class="slide">
-      <img src="elon.jpg" alt="">
-    </div>
-    <div class="slide">
-      <img src="elon.jpg" alt="">
+    <div class="text-box" style="text-align: right;">
+      <h1>Aromatic coffee!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem nam, laudantium error minima quisquam ipsa, doloremque ad, fuga expedita sunt ea nihil unde! Dolorem deleniti officiis quia sint ipsum!</p>
     </div>
   </div>
-  <div class="controls">
-    <a href="" data-index="1">
-      <img src="elon.jpg" alt="">
-    </a>
-    <a href="" data-index="2">
-      <img src="elon.jpg" alt="">
-    </a>
-    <a href="" data-index="3">
-      <img src="elon.jpg" alt="">
-    </a>
-    <a href="" data-index="4">
-      <img src="elon.jpg" alt="">
-    </a>
+  <div class="container-hot-dog">
+      <div class="image-hot-dog">
+          <img src="hot-dog.png" alt="hot-dog">
+        </div>
+    <div class="text-box"style="text-align: left;">
+      <h1>Delicious hot-dogs!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem nam, laudantium error minima quisquam ipsa, doloremque ad, fuga expedita sunt ea nihil unde! Dolorem deleniti officiis quia sint ipsum!</p>
+    </div>
   </div>
 </section>
-    <section class="menu" id="menu">
-        <h1 class="heading hidden"><span>Tasty</span> food</h1>
-        
-        <div class="container-coffee">
-          <div class="image-coffee">
-            <img src="coffee.png" alt="coffee">
-          </div>
-          <div class="text-box"style="text-align: right;">
-            <h1>Hot and delicious coffee!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem nam, laudantium error minima quisquam ipsa, doloremque ad, fuga expedita sunt ea nihil unde! Dolorem deleniti officiis quia sint ipsum!</p>
-          </div>
-        </div>
-      
-        <div class="container-hot-dog">
-            <div class="image-hot-dog">
-                <img src="hot-dog.png" alt="hot-dog">
-              </div>
-          <div class="text-box"style="text-align: left;">
-            <h1>Incredible hot-dogs!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem nam, laudantium error minima quisquam ipsa, doloremque ad, fuga expedita sunt ea nihil unde! Dolorem deleniti officiis quia sint ipsum!</p>
-          </div>
-        </div>
-      </section>
-
 
 <section class="products" id="products">
 <h1 class="heading">high-quality <span>fuel</span></h1>
-
 <div class="box-container">
-    <div class="box">
+  <div class="box">
         <div class="image">
             <img src="" alt="">
         </div>
@@ -191,7 +77,7 @@
             <p class="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores iste, illum veritatis reprehenderit omnis labore necessitatibus quis accusantium maiores tempore beatae temporibus, id magnam at aperiam repudiandae velit illo?</p>
             <div class="price">$1.5 <span>$2</span></div>
         </div>
-    </div>
+      </div>
     <div class="box">
         <div class="image">
             <img src="" alt="">
@@ -203,8 +89,8 @@
             <p class="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores iste, illum veritatis reprehenderit omnis labore necessitatibus quis accusantium maiores tempore beatae temporibus, id magnam at aperiam repudiandae velit illo?</p>
             <div class="price">$1.5 <span>$3</span></div>
         </div>
-    </div>
-    <div class="box">
+      </div>
+      <div class="box">
         <div class="image">
             <img src="" alt="">
         </div>
@@ -215,7 +101,7 @@
             </h3>
             <div class="price">$1.5 <span>$3</span></div>
         </div>
-    </div>
+      </div>
 </div>
 </section>
 
@@ -262,7 +148,7 @@
     <h3>Who are we?</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsam doloremque provident laborum aut ullam iusto repellat asperiores. Nisi sunt repellendus voluptas ab, cumque veritatis quibusdam! Quae assumenda nostrum reprehenderit!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus corrupti ab quos illum vitae aperiam debitis, totam amet laboriosam repellendus. Ipsam debitis id eius, sequi illo laudantium at pariatur!</p>
-    <a href="#" class="btn">Learn more</a>
+    <a href="About.html" class="btn">Learn more</a>
  </div>
 </div>
  </div>
@@ -356,18 +242,17 @@
 
 <section class="footer">
     <div class="container">
-    
       <div class="col" id="company">
             <h3>About us</h3>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta eaque accusantium error recusandae facilis eveniet iste ratione architecto. Eligendi sequi minus aut similique, iste nihil fugit nesciunt magnam natus?
+              We are a team dedicated to delivering high-quality products and services tailored to meet our customers' needs. Our mission is to provide innovative solutions and exceptional customer support.
             </p>
          <div class="social">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
          </div>
         </div>
         <div class="col" id="services">
@@ -402,12 +287,11 @@
         <i class="fa fa-location"></i>
         <p>45-271, Opole</p>
         </div>
-    
-    
     </section>
 <div class="copyrightText">
     <p>Copyright © 2024. All Rights Reserved.</p>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
      var swiper = new Swiper(".mySwiper", {
@@ -431,6 +315,7 @@
         loop: true,
     });
   </script>
+
   <script type="text/javascript" src="vanilla-tilt.js"></script>
   <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".tilt"), {
@@ -444,13 +329,17 @@
         scale:                  1.1, 
 	});
 </script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  $('a[href^="#"]').on('click', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
+  $(document).ready(function() {
+      $('#btn').on('click', function(event) {
+          event.preventDefault(); 
+          
+          $('html, body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000);
+      });
   });
 </script>
 </body>

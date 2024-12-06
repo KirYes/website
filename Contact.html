@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gas Station</title>
+    <title>Contact us!</title>
     <link rel="stylesheet" type="text/css" href="styleContact.css">
 <script src="app.js" defer></script> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -17,24 +17,14 @@
                 <a href="Products.html"style="--i:2;"><b>Products</b></a>
                 <a href="Services.html"style="--i:3;"><b>Services</b></a>
                 <a href="About.html"style="--i:4;"><b>About</b></a>
-                <a href="Contact.html"style="--i:5;"><b>Contact</b></a> 
+                <a href="Contact.html"style="--i:5; "><b class="activ">Contact</b></a> 
     </nav>
     <div class="icons">
         <a href="Login.html"><button class = "btnLogin-popup"><b>Login</b></button> </a>
-        <div class="fas fa-search" id="search-btn" style="  opacity: 0;
-        animation: zoomIn 1s ease forwards;
-        animation-delay: 3.2s; transition: .5s;"></div>
-       <div class="fas fa-palette" id="theme-btn" style="  opacity: 0;
-       animation: zoomIn 1s ease forwards;
-       animation-delay: 3.5s; transition: .5s;"></div>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div> 
-    
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
  </header>
+<body>
  <section class="contact">
   <div class="contact-form">
       <h1>Contact <span>Us!</span></h1>
@@ -51,18 +41,17 @@
 
 <section class="footer">
     <div class="container">
-    
       <div class="col" id="company">
             <h3>About us</h3>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo soluta eaque accusantium error recusandae facilis eveniet iste ratione architecto. Eligendi sequi minus aut similique, iste nihil fugit nesciunt magnam natus?
+                We are a team dedicated to delivering high-quality products and services tailored to meet our customers' needs. Our mission is to provide innovative solutions and exceptional customer support.
             </p>
          <div class="social">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
          </div>
         </div>
         <div class="col" id="services">
@@ -97,56 +86,9 @@
         <i class="fa fa-location"></i>
         <p>45-271, Opole</p>
         </div>
-    
-    
     </section>
 <div class="copyrightText">
     <p>Copyright © 2024. All Rights Reserved.</p>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-     var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 100,
-        stretch: 0,
-        depth: 50,
-        modifier: 1,
-      }, parallax: true,
-      speed: 1000,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }, autoplay: {
-        delay: (3000)
-      },
-        loop: true,
-    });
-  </script>
-  <script type="text/javascript" src="vanilla-tilt.js"></script>
-  <script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".tilt"), {
-        startX: 15,
-        startY: 15,
-		max: 25,
-		speed: 400,
-        glare:                  true,  
-        "max-glare":            0.1, 
-        reset:                  true,
-        scale:                  1.1, 
-	});
-</script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $('a[href^="#"]').on('click', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
-  });
-</script>
 </body>
 </html>

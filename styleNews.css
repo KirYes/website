@@ -202,7 +202,7 @@ animation-delay: calc(.2s * var(--i));
   margin-top: 2rem !important;
 }
 .filter-item{
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
   color: #fff;
@@ -289,12 +289,22 @@ box-shadow: 0 0 30px rgba(90, 90, 90, 0.449);
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  border: 2px solid;
+
 }
 .post-container{
   max-width: 800px;
   margin: auto;
   width: 100%;
+}
+.post-content{
+  margin-top: 10rem !important;
+}
+.post-text{
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin: 1rem 0;
+  text-align: justify;
 }
 .header-content{
   display: flex;
@@ -320,19 +330,9 @@ box-shadow: 0 0 30px rgba(90, 90, 90, 0.449);
   object-fit: cover;
   object-position: center;
 }
-.post-content{
-  margin-top: 10rem !important;
-}
 .sub-heading{
   font-size: 1.2rem;
   color: #604c61;
-}
-.post-text{
-  color: #fff;
-  font-size: 1rem;
-  line-height: 1.7rem;
-  margin: 1rem 0;
-  text-align: justify;
 }
     .btnLogin-popup {
       width: 100px;
@@ -1164,4 +1164,26 @@ height: 435px;
           transform: scale(1);
           opacity: 1;
         }
+      }
+
+      .activ{
+        color: #604c61;
+        transition: all 0.5s ease;
+      }
+      .activ:hover{
+        color: #fff;
+      }
+      .home-title {
+        padding: 15px;
+      }
+      #search-box {
+width: 40%;
+border: 3px solid #000;
+color: #888;
+      }
+      .fas.fa-search{
+        padding: 5px;
+    background-color: #000;
+        border: 4px solid #000;
+        cursor: pointer;
       }
