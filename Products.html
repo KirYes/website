@@ -6,34 +6,22 @@
     <title>Gas Station</title>
     <link rel="stylesheet" type="text/css" href="styleProducts.css">
 <script src="app.js" defer></script> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
- <header class="header">
+  <header class="header">
     <a href="index.html" class="logo">Station</a>
     <nav class="navbar">
-        <a href="News.html"style="--i:1;"><b>News</b></a>
-                <a href="#about"style="--i:2;"><b>Products</b></a>
-                <a href="#products"style="--i:3;"><b>Services</b></a>
-                <a href="#"style="--i:4;"><b>About</b></a>
-                <a href="Contact.html"style="--i:5;"><b>Contact</b></a> 
+        <a href="News.html" style="--i:1;"><b>News</b></a>
+                <a href="Products.html" style="--i:2;"><b>Products</b></a>
+                <a href="Services.html" style="--i:3;"><b>Services</b></a>
+                <a href="About.html" style="--i:4;"><b>About</b></a>
+                <a href="Contact.html" style="--i:5;"><b>Contact</b></a> 
     </nav>
     <div class="icons">
-        <a href="Login.html"><button class = "btnLogin-popup"><b>Login</b></button> </a>
-        <div class="fas fa-search" id="search-btn" style="  opacity: 0;
-        animation: zoomIn 1s ease forwards;
-        animation-delay: 3.2s; transition: .5s;"></div>
-       <div class="fas fa-palette" id="theme-btn" style="  opacity: 0;
-       animation: zoomIn 1s ease forwards;
-       animation-delay: 3.5s; transition: .5s;"></div>
+      <a href="Login.html" class="btnLogin-popup"><b>Login</b></a>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div> 
-    
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
  </header>
  <section class="home" id="home">
   <div class="left">
@@ -95,8 +83,8 @@
         <i class="fa fa-location"></i>
         <p>45-271, Opole</p>
         </div>
-    
-    
+        </div>
+    </div>
     </section>
 <div class="copyrightText">
     <p>Copyright © 2024. All Rights Reserved.</p>
@@ -124,19 +112,6 @@
         loop: true,
     });
   </script>
-  <script type="text/javascript" src="vanilla-tilt.js"></script>
-  <script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".tilt"), {
-        startX: 15,
-        startY: 15,
-		max: 25,
-		speed: 400,
-        glare:                  true,  
-        "max-glare":            0.1, 
-        reset:                  true,
-        scale:                  1.1, 
-	});
-</script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   $('a[href^="#"]').on('click', function(event) {

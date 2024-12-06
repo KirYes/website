@@ -168,6 +168,11 @@ animation-delay: 1.7s;
 color: #fff;
     }
     .btnLogin-popup {
+      appearance: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 15px; 
       width: 100px;
       height: 40px;
       background: #fff;
@@ -541,7 +546,7 @@ ul li:nth-child(even) div {
   left: -445px;
 }
 
-time {
+h1 {
   color: #604c61;
   font-weight: bold;
   font-size: 25px;

@@ -335,6 +335,11 @@ box-shadow: 0 0 30px rgba(90, 90, 90, 0.449);
   color: #604c61;
 }
     .btnLogin-popup {
+      appearance: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 15px; 
       width: 100px;
       height: 40px;
       background: #fff;
