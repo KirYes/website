@@ -220,6 +220,11 @@ animation-delay: calc(.2s * var(--i));
   transform: scale(1.1);
 }
     .btnLogin-popup {
+      appearance: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 15px; 
       width: 100px;
       height: 40px;
       background: #fff;
