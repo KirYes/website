@@ -138,6 +138,9 @@ animation-delay: calc(.2s * var(--i));
     background-image: url(main.jpg);
     background-size: cover;
     background-position: center;
+    animation: body-image linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 .home .content{
@@ -647,6 +650,9 @@ transition: all 0.5s ease;
   }
   ul li:nth-child(even) div {
     left: -180px;
+  }
+  .home{
+    animation: none;
   }
 }
 @media (max-width:991px){
