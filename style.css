@@ -138,17 +138,10 @@ animation-delay: calc(.2s * var(--i));
     background-image: url(main.jpg);
     background-size: cover;
     background-position: center;
-    animation: body-image linear forwards;
-    animation-timeline: view();
-    animation-range: exit;
 }
 
 .home .content{
     max-width: 60rem;
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range: exit -200px;
-    transition: all 0.5s ease;
 }
 .home .content h3{
   text-transform:capitalize;
